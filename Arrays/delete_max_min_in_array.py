@@ -15,12 +15,10 @@ while i < array_size:
     i += 1
 
 i = 0
-array_max = array[1]
-array_min = array[1]
 
 while i < array_size:
 
-    if array[i] > array_max:
+    if array_max == None or array[i] > array_max:
         array_max = array[i]
     i += 1
 
@@ -28,7 +26,7 @@ i = 0
 
 while i < array_size:
 
-    if array[i] < array_min:
+    if array_min == None or array[i] < array_min:
         array_min = array[i]
     i += 1
 

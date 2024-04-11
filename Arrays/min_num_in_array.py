@@ -13,11 +13,10 @@ while i < array_size:
     i += 1
 
 i = 0
-array_min = array[1]
 
 while i < array_size:
 
-    if array[i] < array_min:
+    if array_min == None or array[i] < array_min:
         array_min = array[i]
     i += 1
 
